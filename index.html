@@ -6,6 +6,6 @@
 <body>
     <strong>Redirection ....</strong>
     <script src="base64.min.js"></script>
-    <script>if(location.search.indexOf('?') !== -1){document.location.replace(Base64.decode(location.search.substr(1)));}</script>    
+    <script>if(location.search.indexOf('?') !== -1){document.location.replace(Base64.decode(decodeURIComponent(location.search.substr(1))));}</script>    
 </body>
 </html>
